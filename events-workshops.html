@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Workshops - Striving for Inclusion</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light grey background */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center fixed w-full z-50 rounded-b-lg">
+        <!-- Logo -->
+        <div class="flex items-center mb-4 md:mb-0">
+            <img src="https://placehold.co/50x50/6a0dad/ffffff?text=Logo" alt="Striving for Inclusion Logo" class="h-12 w-12 rounded-full mr-3">
+            <span class="text-2xl font-bold text-purple-800">Striving for Inclusion</span>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="flex-grow">
+            <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6 text-lg font-medium">
+                <li><a href="index.html" class="text-gray-700 hover:text-purple-600 transition duration-300">Home</a></li>
+                <li><a href="about-us.html" class="text-gray-700 hover:text-purple-600 transition duration-300">About Us</a></li>
+                <li class="relative group">
+                    <a href="our-programmes.html" class="text-gray-700 hover:text-purple-600 transition duration-300 flex items-center">
+                        Our Programmes <i class="fas fa-chevron-down ml-2 text-sm"></i>
+                    </a>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-2 mt-2 w-48 z-10">
+                        <li><a href="#for-children" class="block px-4 py-2 text-gray-700 hover:bg-purple-100 rounded-md">For Children</a></li>
+                        <li><a href="#for-parents" class="block px-4 py-2 text-gray-700 hover:bg-purple-100 rounded-md">For Parents</a></li>
+                        <li><a href="#in-senegal" class="block px-4 py-2 text-gray-700 hover:bg-purple-100 rounded-md">In Senegal</a></li>
+                    </ul>
+                </li>
+                <li><a href="events-workshops.html" class="text-purple-600 font-semibold transition duration-300">Events & Workshops</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-purple-600 transition duration-300">Resources</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-purple-600 transition duration-300">Get Involved</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-purple-600 transition duration-300">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Call to Action Buttons (Header) -->
+        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 mt-4 md:mt-0">
+            <button class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-5 rounded-full shadow-lg transition duration-300">Join a Workshop</button>
+            <button class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-5 rounded-full shadow-lg transition duration-300">Support Our Work</button>
+        </div>
+    </header>
+
+    <main class="pt-24 pb-16">
+        <section class="bg-purple-700 text-white py-16 text-center rounded-b-xl mb-12">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl font-extrabold mb-4">Events & Workshops</h1>
+                <p class="text-xl font-light">Join Us for Learning, Growth, and Community</p>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-4xl font-bold text-purple-800 mb-10 text-center">Upcoming Events</h2>
+
+                <!-- Filters -->
+                <div class="flex flex-wrap justify-center gap-4 mb-10">
+                    <button class="bg-purple-100 text-purple-800 px-5 py-2 rounded-full font-semibold hover:bg-purple-200 transition duration-300">All</button>
+                    <button class="bg-purple-100 text-purple-800 px-5 py-2 rounded-full font-semibold hover:bg-purple-200 transition duration-300">For Parents</button>
+                    <button class="bg-purple-100 text-purple-800 px-5 py-2 rounded-full font-semibold hover:bg-purple-200 transition duration-300">For Children</button>
+                    <button class="bg-purple-100 text-purple-800 px-5 py-2 rounded-full font-semibold hover:bg-purple-200 transition duration-300">Online</button>
+                    <button class="bg-purple-100 text-purple-800 px-5 py-2 rounded-full font-semibold hover:bg-purple-200 transition duration-300">In-Person</button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Event Card 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-purple-200 hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://placehold.co/400x250/A78BFA/ffffff?text=Parenting+Workshop" alt="Parenting Workshop" class="rounded-lg mb-4 w-full h-auto object-cover">
+                        <h3 class="text-2xl font-semibold text-purple-800 mb-2">Parenting for Inclusion: Building Bridges</h3>
+                        <p class="text-gray-700 mb-2"><i class="far fa-calendar-alt mr-2"></i> July 20, 2025</p>
+                        <p class="text-gray-700 mb-2"><i class="far fa-clock mr-2"></i> 10:00 AM - 12:00 PM BST</p>
+                        <p class="text-gray-700 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Online via Zoom</p>
+                        <p class="text-gray-600 text-sm mb-4">A workshop for parents focusing on creating an inclusive home environment and navigating cultural differences with children who have SEND needs.</p>
+                        <p class="text-sm text-gray-600 italic mb-4"><i class="fas fa-wheelchair mr-2"></i> Accessibility: Live captioning, quiet breakout rooms available.</p>
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 w-full">Register Now</button>
+                    </div>
+
+                    <!-- Event Card 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-indigo-200 hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://placehold.co/400x250/C7D2FE/4F46E5?text=Literacy+Club" alt="Children's Literacy Club" class="rounded-lg mb-4 w-full h-auto object-cover">
+                        <h3 class="text-2xl font-semibold text-indigo-800 mb-2">Adventures in Reading: Literacy Club</h3>
+                        <p class="text-gray-700 mb-2"><i class="far fa-calendar-alt mr-2"></i> August 5, 2025</p>
+                        <p class="text-gray-700 mb-2"><i class="far fa-clock mr-2"></i> 2:00 PM - 4:00 PM BST</p>
+                        <p class="text-gray-700 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Community Hall, London, UK</p>
+                        <p class="text-gray-600 text-sm mb-4">An interactive literacy club for children aged 6-10, featuring storytelling, creative writing, and fun reading games.</p>
+                        <p class="text-sm text-gray-600 italic mb-4"><i class="fas fa-wheelchair mr-2"></i> Accessibility: Wheelchair accessible venue, visual schedule provided.</p>
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 w-full">Register Now</button>
+                    </div>
+
+                    <!-- Event Card 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-green-200 hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://placehold.co/400x250/D1FAE5/10B981?text=Educator+Training" alt="Educator Training" class="rounded-lg mb-4 w-full h-auto object-cover">
+                        <h3 class="text-2xl font-semibold text-green-800 mb-2">Inclusive Teaching Practices: Dakar Session</h3>
+                        <p class="text-gray-700 mb-2"><i class="far fa-calendar-alt mr-2"></i> September 1, 2025</p>
+                        <p class="text-gray-700 mb-2"><i class="far fa-clock mr-2"></i> 9:00 AM - 3:00 PM GMT</p>
+                        <p class="text-gray-700 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Education Centre, Dakar, Senegal</p>
+                        <p class="text-gray-600 text-sm mb-4">A full-day training for educators in Senegal on implementing inclusive strategies in the classroom for children with diverse learning needs.</p>
+                        <p class="text-sm text-gray-600 italic mb-4"><i class="fas fa-wheelchair mr-2"></i> Accessibility: Translated materials, local support available.</p>
+                        <button class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 w-full">Register Now</button>
+                    </div>
+
+                    <!-- Event Card 4 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-yellow-200 hover:shadow-xl transform hover:-translate-y-1 transition duration-300">
+                        <img src="https://placehold.co/400x250/FEF9C3/F59E0B?text=Cultural+Workshop" alt="Cultural Workshop" class="rounded-lg mb-4 w-full h-auto object-cover">
+                        <h3 class="text-2xl font-semibold text-yellow-800 mb-2">Cultural Storytelling: Senegambian Tales</h3>
+                        <p class="text-gray-700 mb-2"><i class="far fa-calendar-alt mr-2"></i> October 15, 2025</p>
+                        <p class="text-gray-700 mb-2"><i class="far fa-clock mr-2"></i> 4:00 PM - 5:00 PM BST</p>
+                        <p class="text-gray-700 mb-4"><i class="fas fa-map-marker-alt mr-2"></i> Online via Zoom</p>
+                        <p class="text-gray-600 text-sm mb-4">An online session for children and families to explore rich Senegambian folklore and traditional stories.</p>
+                        <p class="text-sm text-gray-600 italic mb-4"><i class="fas fa-wheelchair mr-2"></i> Accessibility: Interactive elements, simplified language options.</p>
+                        <button class="bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-2 px-6 rounded-full shadow-md transition duration-300 w-full">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Highlights Section -->
+        <section class="py-12 bg-gradient-to-br from-gray-50 to-gray-100">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-4xl font-bold text-purple-800 mb-10 text-center">Past Highlights</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/500x300/D1D5DB/4B5563?text=Past+Event+1" alt="Photo from past event" class="rounded-lg mb-4 w-full h-auto object-cover">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Summer Fun Day 2024</h3>
+                        <p class="text-gray-700 mb-4">A vibrant day of games, cultural performances, and family activities.</p>
+                        <a href="#" class="text-purple-600 hover:underline font-semibold">View Photo Gallery</a>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-lg">
+                        <img src="https://placehold.co/500x300/D1D5DB/4B5563?text=Past+Event+2" alt="Video from past event" class="rounded-lg mb-4 w-full h-auto object-cover">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">SEND Parent Support Group Launch</h3>
+                        <p class="text-gray-700 mb-4">Watch highlights from our inaugural parent support group meeting.</p>
+                        <a href="#" class="text-purple-600 hover:underline font-semibold">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Form Section (Example) -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-4xl font-bold text-purple-800 mb-10 text-center">Easy Registration</h2>
+                <div class="bg-purple-50 p-8 rounded-2xl shadow-xl border border-purple-200">
+                    <p class="text-center text-gray-700 mb-6">Register for any of our events or workshops quickly and easily.</p>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="reg-name" class="block text-gray-700 text-lg font-bold mb-2">Full Name:</label>
+                            <input type="text" id="reg-name" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-purple-500 focus:border-purple-500 text-lg" placeholder="Your Full Name" required>
+                        </div>
+                        <div>
+                            <label for="reg-email" class="block text-gray-700 text-lg font-bold mb-2">Email Address:</label>
+                            <input type="email" id="reg-email" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-purple-500 focus:border-purple-500 text-lg" placeholder="your.email@example.com" required>
+                        </div>
+                        <div>
+                            <label for="reg-event" class="block text-gray-700 text-lg font-bold mb-2">Select Event/Workshop:</label>
+                            <select id="reg-event" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-purple-500 focus:border-purple-500 text-lg" required>
+                                <option value="">-- Please Select --</option>
+                                <option value="parenting-inclusion">Parenting for Inclusion: Building Bridges (July 20)</option>
+                                <option value="literacy-club">Adventures in Reading: Literacy Club (August 5)</option>
+                                <option value="inclusive-teaching">Inclusive Teaching Practices: Dakar Session (Sept 1)</option>
+                                <option value="cultural-storytelling">Cultural Storytelling: Senegambian Tales (Oct 15)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="reg-accessibility" class="block text-gray-700 text-lg font-bold mb-2">Accessibility Needs (Optional):</label>
+                            <textarea id="reg-accessibility" class="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-purple-500 focus:border-purple-500 text-lg" rows="3" placeholder="e.g., wheelchair access, sign language interpreter, large print materials"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-10 rounded-full shadow-lg transition duration-300 text-xl">Submit Registration</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-12 px-6 md:px-12 rounded-t-lg">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- About Section -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4 text-purple-300">Striving for Inclusion</h3>
+                <p class="text-gray-400 text-sm">
+                    Striving for Inclusion is a community-led organisation dedicated to empowering children and families from Senegambian backgrounds through inclusive education, cultural identity, and family support.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-purple-300">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                    <li><a href="about-us.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                    <li><a href="our-programmes.html" class="text-gray-400 hover:text-white transition duration-300">Our Programmes</a></li>
+                    <li><a href="events-workshops.html" class="text-gray-400 hover:text-white transition duration-300">Events & Workshops</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Resources</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Get Involved</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Impact & Reports</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-purple-300">Contact Us</h3>
+                <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2"></i> info@strivingforinclusion.org</p>
+                <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> +44 1234 567890 (UK)</p>
+                <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> +221 77 123 4567 (Senegal)</p>
+                <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Inclusion Street, London, UK</p>
+                <p class="text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i> 456 Thriving Road, Dakar, Senegal</p>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-purple-300">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-10">
+            &copy; 2025 Striving for Inclusion. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

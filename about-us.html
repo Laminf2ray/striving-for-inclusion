@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Striving for Inclusion</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light grey background */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center fixed w-full z-50 rounded-b-lg">
+        <!-- Logo -->
+        <div class="flex items-center mb-4 md:mb-0">
+            <img src="LogoSFI.jpg" alt="Striving for Inclusion Logo" class="h-12 w-12 rounded-full mr-3">
+            <span class="text-2xl font-bold text-purple-800">Striving for Inclusion</span>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="flex-grow">
+            <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6 text-lg font-medium">
+                <li><a href="index.html" class="text-gray-700 hover:text-purple-600 transition duration-300">Home</a></li>
+                <li><a href="about-us.html" class="text-gray-700 hover:text-purple-600 transition duration-300">About Us</a></li>
+                <li class="relative group">
+                    <a href="our-programmes.html" class="text-gray-700 hover:text-purple-600 transition duration-300 flex items-center">
+                        Our Programmes <i class="fas fa-chevron-down ml-2 text-sm"></i>
+                    </a>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-2 mt-2 w-48 z-10">
+                        <li><a href="#for-children" class="block px-4 py-2 text-gray-700 hover:bg-purple-100 rounded-md">For Children</a></li>
+                        <li><a href="#for-parents" class="block px-4 py-2 text-gray-700 hover:bg-purple-100 rounded-md">For Parents</a></li>
+                        <li><a href="#in-senegal" class="block px-4 py-2 text-gray-700 hover:bg-purple-100 rounded-md">In Senegal</a></li>
+                    </ul>
+                </li>
+                <li><a href="events-workshops.html" class="text-gray-700 hover:text-purple-600 transition duration-300">Events & Workshops</a></li>
+                <li><a href="resources.html" class="text-gray-700 hover:text-purple-600 transition duration-300">Resources</a></li>
+                <li><a href="get-involved.html" class="text-gray-700 hover:text-purple-600 transition duration-300">Get Involved</a></li>
+                <li><a href="contact-us.html" class="text-purple-600 font-semibold transition duration-300">About Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Call to Action Buttons (Header) -->
+        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 mt-4 md:mt-0">
+            <button class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-5 rounded-full shadow-lg transition duration-300">Join a Workshop</button>
+            <button class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-5 rounded-full shadow-lg transition duration-300">Support Our Work</button>
+        </div>
+    </header>
+
+    <main class="pt-24 pb-16">
+        <section class="bg-purple-700 text-white py-16 text-center rounded-b-xl mb-12">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl font-extrabold mb-4">About Us</h1>
+                <p class="text-xl font-light">Learn More About Our Mission and Vision</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <h2 class="text-4xl font-bold text-purple-800 mb-10 text-center">Who We Are</h2>
+                <div class="bg-purple-50 p-8 rounded-2xl shadow-xl border border-purple-200">
+                    <p class="text-center text-gray-700 mb-6">Striving for Inclusion is a community-driven initiative focused on supporting children and families through inclusive education and cultural empowerment.</p>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="py-12 bg-gradient-to-br from-indigo-50 to-blue-100">
+            <div class="container mx-auto px-6 max-w-5xl">
+                <h2 class="text-4xl font-bold text-indigo-800 mb-10 text-center">Reach Us Directly</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Email & Phone -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl border border-indigo-200 text-center">
+                        <div class="text-6xl text-indigo-600 mb-4"><i class="fas fa-envelope"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Email & Phone</h3>
+                        <p class="text-lg text-gray-700 mb-2"><strong>Email:</strong> info@strivingforinclusion.org</p>
+                        <p class="text-lg text-gray-700 mb-2"><strong>Phone (UK):</strong> +44 1234 567890</p>
+                        <p class="text-lg text-gray-700 mb-4"><strong>Phone (Senegal):</strong> +221 77 123 4567</p>
+                        <p class="text-sm text-gray-600">Our team will respond to your inquiry as soon as possible.</p>
+                    </div>
+
+                    <!-- Office Addresses -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl border border-indigo-200 text-center">
+                        <div class="text-6xl text-indigo-600 mb-4"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Office Addresses</h3>
+                        <p class="text-lg text-gray-700 mb-2"><strong>UK Office:</strong></p>
+                        <p class="text-gray-700 mb-4">123 Inclusion Street,<br>London, UK</p>
+                        <p class="text-lg text-gray-700 mb-2"><strong>Senegal Office:</strong></p>
+                        <p class="text-gray-700 mb-4">456 Thriving Road,<br>Dakar, Senegal</p>
+                        <a href="https://www.google.com/maps" target="_blank" class="text-indigo-600 hover:underline font-semibold flex items-center justify-center">
+                            View on Map <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-6 max-w-4xl text-center">
+                <h2 class="text-4xl font-bold text-purple-800 mb-10">Connect With Us</h2>
+                <p class="text-lg text-gray-700 mb-8">Follow us on social media to stay updated on our latest news, events, and impact stories!</p>
+                <div class="flex justify-center space-x-8 text-purple-600 text-5xl">
+                    <a href="#" class="hover:text-purple-800 transition duration-300" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-purple-800 transition duration-300" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-purple-800 transition duration-300" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-purple-800 transition duration-300" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-12 bg-gray-100">
+            <div class="container mx-auto px-6 max-w-4xl">
+                <h2 class="text-4xl font-bold text-purple-800 mb-10 text-center">Frequently Asked Questions</h2>
+                <div class="space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">What age groups do your programmes cater to?</h3>
+                        <p class="text-gray-700">Our programmes are designed for children primarily aged 5-16, with specific activities tailored for different age ranges. We also offer extensive workshops and resources for parents and educators.</p>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Are your services only for Senegambian families?</h3>
+                        <p class="text-gray-700">While we have a strong focus on supporting Senegambian communities, our inclusive education principles and many resources are beneficial for all families and children, regardless of their background.</p>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">How can I register for a workshop?</h3>
+                        <p class="text-gray-700">You can register for our workshops directly on our <a href="events-workshops.html" class="text-purple-600 hover:underline font-semibold">Events & Workshops page</a>. Each event listing includes a registration form or a link to register.</p>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Do you offer support for specific SEND conditions?</h3>
+                        <p class="text-gray-700">Our SEND-friendly sessions and resources are designed to be adaptable and beneficial for a wide range of Special Educational Needs and Disabilities. We aim to provide general support and guidance, and can also direct you to more specialized resources where appropriate.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-12 px-6 md:px-12 rounded-t-lg">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- About Section -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4 text-purple-300">Striving for Inclusion</h3>
+                <p class="text-gray-400 text-sm">
+                    Striving for Inclusion is a community-led organisation dedicated to empowering children and families from Senegambian backgrounds through inclusive education, cultural identity, and family support.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-purple-300">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                    <li><a href="about-us.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                    <li><a href="our-programmes.html" class="text-gray-400 hover:text-white transition duration-300">Our Programmes</a></li>
+                    <li><a href="events-workshops.html" class="text-gray-400 hover:text-white transition duration-300">Events & Workshops</a></li>
+                    <li><a href="resources.html" class="text-gray-400 hover:text-white transition duration-300">Resources</a></li>
+                    <li><a href="get-involved.html" class="text-gray-400 hover:text-white transition duration-300">Get Involved</a></li>
+                    <li><a href="contact-us.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Impact & Reports</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-purple-300">About Us</h3>
+                <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2"></i> info@strivingforinclusion.org</p>
+                <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> +44 1234 567890 (UK)</p>
+                <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> +221 77 123 4567 (Senegal)</p>
+                <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Inclusion Street, London, UK</p>
+                <p class="text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i> 456 Thriving Road, Dakar, Senegal</p>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-purple-300">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-10">
+            &copy; 2025 Striving for Inclusion. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

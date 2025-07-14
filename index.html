@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Striving for Inclusion - Empowering Families, Embracing Inclusion</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* Light grey background */
+        }
+        .hero-background {
+            background-image: url('https://placehold.co/1920x800/6a0dad/ffffff?text=Empowering+Families'); /* Placeholder image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .loading-spinner {
+            border: 4px solid #f3f3f3; /* Light grey */
+            border-top: 4px solid #6a0dad; /* Purple */
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center fixed w-full z-50 rounded-b-lg">
+        <!-- Logo -->
+        <div class="flex items-center mb-4 md:mb-0">
+            <img src="https://placehold.co/50x50/6a0dad/ffffff?text=Logo" alt="Striving for Inclusion Logo" class="h-12 w-12 rounded-full mr-3">
+            <span class="text-2xl font-bold text-purple-800">Striving for Inclusion</span>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="flex-grow">
+            <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6 text-lg font-medium">
+                <li><a href="index.html" class="text-gray-700 hover:text-purple-600 transition duration-300">Home</a></li>
+                <li><a href="about-us.html" class="text-gray-700 hover:text-purple-600 transition duration-300">About Us</a></li>
+                <li class="relative group">
+                    <a href="#" class="text-gray-700 hover:text-purple-600 transition duration-300 flex items-center">
+                        Our Programmes <i class="fas fa-chevron-down ml-2 text-sm"></i>
+                    </a>
+                    <ul class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-2 mt-2 w-48 z-10">
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-purple-100 rounded-md">For Children</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-purple-100 rounded-md">For Parents</a></li>
+                        <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-purple-100 rounded-md">In Senegal</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="text-gray-700 hover:text-purple-600 transition duration-300">Events & Workshops</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-purple-600 transition duration-300">Resources</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-purple-600 transition duration-300">Get Involved</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-purple-600 transition duration-300">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Call to Action Buttons (Header) -->
+        <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 mt-4 md:mt-0">
+            <button class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-5 rounded-full shadow-lg transition duration-300">Join a Workshop</button>
+            <button class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-5 rounded-full shadow-lg transition duration-300">Support Our Work</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-background text-white text-center py-32 md:py-48 flex items-center justify-center min-h-screen-75 pt-24">
+        <div class="container mx-auto px-6 max-w-4xl bg-black bg-opacity-50 p-8 rounded-xl shadow-2xl">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Empowering Families, Embracing Inclusion</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light leading-relaxed">Striving for Inclusion exists to empower children and families through inclusive education, cultural identity, and family support. We provide SEND-friendly reading activities, learning games, and workshops for children while equipping parents with practical tools to support their children's development, manage cultural differences at home, and better understand neurodiversity.</p>
+            <button class="bg-yellow-400 hover:bg-yellow-500 text-purple-900 font-bold py-4 px-10 rounded-full text-xl shadow-xl transform hover:scale-105 transition duration-300">Discover Our Programmes</button>
+        </div>
+    </section>
+
+    <!-- Introduction/Purpose Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl text-center">
+            <h2 class="text-4xl font-bold text-purple-800 mb-8">Nurturing Every Child, Empowering Every Family</h2>
+            <p class="text-lg leading-relaxed text-gray-700">
+                The purpose of Striving for Inclusion is to create a supportive, culturally aware, and inclusive learning environment where children, especially those from Senegalese and Gambian backgrounds, can thrive academically, socially, and personally. We focus on empowering both children and their families, particularly those with SEND needs, through accessible education, cultural understanding, and active community engagement. At Striving for Inclusion, we believe education goes beyond the classroom; we inspire curiosity, creativity and a stronger sense of identity.
+            </p>
+        </div>
+    </section>
+
+    <!-- Key Programme Highlights Section -->
+    <section class="py-16 bg-gradient-to-br from-purple-50 to-indigo-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-purple-800 mb-12">Our Key Programmes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Programme Block 1: For Children -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 flex flex-col items-center text-center">
+                    <div class="text-6xl text-purple-600 mb-6">
+                        <i class="fas fa-child"></i> <!-- Child icon -->
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">For Children</h3>
+                    <p class="text-gray-700 mb-6 flex-grow">Engaging literacy clubs, fun learning games, and cultural workshops designed for every child, including SEND-friendly sessions.</p>
+                    <button class="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">See Children's Programmes</button>
+                </div>
+
+                <!-- Programme Block 2: For Parents -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 flex flex-col items-center text-center">
+                    <div class="text-6xl text-indigo-600 mb-6">
+                        <i class="fas fa-hands-helping"></i> <!-- Helping hands icon -->
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">For Parents</h3>
+                    <p class="text-gray-700 mb-6 flex-grow">Workshops and resources to help parents support their children's education, understand cultural differences, and navigate SEND needs.</p>
+                    <button class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">Explore Parent Support</button>
+                </div>
+
+                <!-- Programme Block 3: In Senegal -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition duration-300 flex flex-col items-center text-center">
+                    <div class="text-6xl text-green-600 mb-6">
+                        <i class="fas fa-globe-africa"></i> <!-- Africa globe icon -->
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">In Senegal</h3>
+                    <p class="text-gray-700 mb-6 flex-grow">Training for educators and parent workshops in Senegal, providing essential SEND resources and inclusive practices.</p>
+                    <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">Learn About Our Work in Senegal</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Carousel Section (Simplified for static HTML) -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-4xl font-bold text-purple-800 mb-12">What Our Families Say</h2>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-purple-200">
+                <p class="text-xl italic text-gray-700 mb-6" id="testimonial-text">
+                    "Striving for Inclusion has been a lifeline for our family. My child has blossomed in their literacy club!"
+                </p>
+                <p class="text-lg font-semibold text-purple-700" id="testimonial-author">- A Happy Parent</p>
+                <div class="flex justify-center mt-6 space-x-2">
+                    <span class="h-3 w-3 bg-purple-400 rounded-full"></span>
+                    <span class="h-3 w-3 bg-purple-200 rounded-full"></span>
+                    <span class="h-3 w-3 bg-purple-200 rounded-full"></span>
+                </div>
+                <div class="mt-8">
+                    <textarea id="testimonial-prompt" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500" rows="2" placeholder="Enter keywords for a new testimonial (e.g., 'impactful, supportive, child development')"></textarea>
+                    <button id="generate-testimonial-btn" class="mt-4 bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-5 rounded-full shadow-lg transition duration-300">Generate Testimonial ✨</button>
+                    <div id="testimonial-loading" class="loading-spinner hidden mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Events & Workshops Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-4xl font-bold text-center text-purple-800 mb-12">Join Our Upcoming Events</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Event Card 1 -->
+                <div class="bg-purple-50 p-6 rounded-2xl shadow-lg border border-purple-200 flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:mr-6 text-center">
+                        <img src="https://placehold.co/150x100/A78BFA/ffffff?text=Workshop" alt="Workshop Image" class="rounded-lg mb-2 w-full h-auto">
+                        <p class="text-sm text-gray-600 font-medium">Online Event</p>
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h3 class="text-2xl font-semibold text-purple-800 mb-2">Parenting for Inclusion Workshop</h3>
+                        <p class="text-lg text-gray-700 mb-3"><i class="far fa-calendar-alt mr-2"></i> July 20, 2025</p>
+                        <p class="text-lg text-gray-700 mb-4"><i class="far fa-clock mr-2"></i> 10:00 AM - 12:00 PM BST</p>
+                        <p class="text-gray-600 mb-4">Learn practical strategies to create an inclusive home environment for children with diverse needs.</p>
+                        <button class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition duration-300">Register Now</button>
+                    </div>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="bg-indigo-50 p-6 rounded-2xl shadow-lg border border-indigo-200 flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-4 md:mb-0 md:mr-6 text-center">
+                        <img src="https://placehold.co/150x100/818CF8/ffffff?text=Literacy" alt="Literacy Club Image" class="rounded-lg mb-2 w-full h-auto">
+                        <p class="text-sm text-gray-600 font-medium">In-Person (UK)</p>
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h3 class="text-2xl font-semibold text-indigo-800 mb-2">Children's Literacy Club</h3>
+                        <p class="text-lg text-gray-700 mb-3"><i class="far fa-calendar-alt mr-2"></i> August 5, 2025</p>
+                        <p class="text-lg text-gray-700 mb-4"><i class="far fa-clock mr-2"></i> 2:00 PM - 4:00 PM BST</p>
+                        <p class="text-gray-600 mb-4">Fun and interactive reading activities designed to boost confidence and love for books in children.</p>
+                        <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition duration-300">Register Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <button class="bg-yellow-400 hover:bg-yellow-500 text-purple-900 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300">View All Events</button>
+            </div>
+
+            <!-- Event Idea Generator -->
+            <div class="mt-16 bg-white p-8 rounded-2xl shadow-xl border border-purple-200">
+                <h3 class="text-3xl font-bold text-purple-800 mb-6 text-center">Generate Event Ideas ✨</h3>
+                <p class="text-center text-gray-700 mb-6">Tell us what kind of event you're thinking of, and we'll suggest some ideas!</p>
+                <textarea id="event-topic-input" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500 mb-4" rows="3" placeholder="e.g., 'workshop for parents on managing screen time', 'fun activity for children about cultural heritage'"></textarea>
+                <div class="text-center">
+                    <button id="generate-event-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">Generate Idea</button>
+                    <div id="event-loading" class="loading-spinner hidden mt-4"></div>
+                </div>
+                <div id="event-idea-output" class="mt-8 p-6 bg-purple-50 border border-purple-200 rounded-xl hidden">
+                    <h4 class="text-xl font-semibold text-purple-800 mb-3">Suggested Event Idea:</h4>
+                    <p class="text-gray-700 whitespace-pre-wrap"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section with LLM Features -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-green-100">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <h2 class="text-4xl font-bold text-center text-blue-800 mb-12">Empowering Resources ✨</h2>
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-blue-200">
+                <p class="text-center text-gray-700 mb-6">Paste any text below, and let our AI help you summarize or expand on it!</p>
+                <textarea id="resource-text-input" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 mb-4" rows="8" placeholder="Paste your text here..."></textarea>
+                <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 mb-6">
+                    <button id="summarize-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">Summarize Text</button>
+                    <button id="expand-btn" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">Expand Text</button>
+                    <div id="resource-loading" class="loading-spinner hidden"></div>
+                </div>
+                <div id="resource-output" class="mt-8 p-6 bg-blue-50 border border-blue-200 rounded-xl hidden">
+                    <h4 class="text-xl font-semibold text-blue-800 mb-3">Processed Text:</h4>
+                    <p class="text-gray-700 whitespace-pre-wrap"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved Section -->
+    <section class="py-16 bg-gradient-to-br from-purple-100 to-pink-100">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-4xl font-bold text-purple-800 mb-12">Make a Difference Today</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-xl flex flex-col items-center hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-5xl text-purple-600 mb-4"><i class="fas fa-handshake"></i></div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Volunteer with Us</h3>
+                    <p class="text-gray-700 mb-6">Contribute your time and skills to support our programmes and events.</p>
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition duration-300">Learn More</button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl flex flex-col items-center hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-5xl text-indigo-600 mb-4"><i class="fas fa-donate"></i></div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Donate to Our Cause</h3>
+                    <p class="text-gray-700 mb-6">Your generosity helps us reach more children and families in need.</p>
+                    <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition duration-300">Donate Now</button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl flex flex-col items-center hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-5xl text-green-600 mb-4"><i class="fas fa-user-friends"></i></div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Become a Parent Ambassador</h3>
+                    <p class="text-gray-700 mb-6">Share your experience and inspire other parents in your community.</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition duration-300">Find Out How</button>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-xl flex flex-col items-center hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+                    <div class="text-5xl text-red-600 mb-4"><i class="fas fa-building"></i></div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-3">Partner with Us</h3>
+                    <p class="text-gray-700 mb-6">Collaborate with Striving for Inclusion to amplify our collective impact.</p>
+                    <button class="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-full shadow-md transition duration-300">Partner Today</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-12 px-6 md:px-12 rounded-t-lg">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- About Section -->
+            <div>
+                <h3 class="text-2xl font-bold mb-4 text-purple-300">Striving for Inclusion</h3>
+                <p class="text-gray-400 text-sm">
+                    Striving for Inclusion is a community-led organisation dedicated to empowering children and families from Senegambian backgrounds through inclusive education, cultural identity, and family support.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-purple-300">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                    <li><a href="about-us.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Our Programmes</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Events & Workshops</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Resources</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Get Involved</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact Us</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Impact & Reports</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-purple-300">Contact Us</h3>
+                <p class="text-gray-400 mb-2"><i class="fas fa-envelope mr-2"></i> info@strivingforinclusion.org</p>
+                <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> +44 1234 567890 (UK)</p>
+                <p class="text-400 mb-2"><i class="fas fa-phone mr-2"></i> +221 77 123 4567 (Senegal)</p>
+                <p class="text-gray-400 mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Inclusion Street, London, UK</p>
+                <p class="text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i> 456 Thriving Road, Dakar, Senegal</p>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-purple-300">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300 text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-10">
+            &copy; 2025 Striving for Inclusion. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Function to call the Gemini API
+        async function callGeminiAPI(prompt) {
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+            const payload = { contents: chatHistory };
+            const apiKey = ""; // Canvas will automatically provide the API key
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const result = await response.json();
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    return result.candidates[0].content.parts[0].text;
+                } else {
+                    console.error("Unexpected API response structure:", result);
+                    return "Error: Could not generate content. Please try again.";
+                }
+            } catch (error) {
+                console.error("Error calling Gemini API:", error);
+                return "Error: Failed to connect to the AI service. Please try again.";
+            }
+        }
+
+        // --- Event Idea Generator Logic ---
+        const eventTopicInput = document.getElementById('event-topic-input');
+        const generateEventBtn = document.getElementById('generate-event-btn');
+        const eventIdeaOutput = document.getElementById('event-idea-output');
+        const eventLoadingSpinner = document.getElementById('event-loading');
+
+        generateEventBtn.addEventListener('click', async () => {
+            const topic = eventTopicInput.value.trim();
+            if (!topic) {
+                eventIdeaOutput.classList.remove('hidden');
+                eventIdeaOutput.querySelector('p').textContent = "Please enter a topic to generate an event idea.";
+                return;
+            }
+
+            eventLoadingSpinner.classList.remove('hidden');
+            generateEventBtn.disabled = true;
+            eventIdeaOutput.classList.add('hidden'); // Hide previous output
+
+            const prompt = `Generate a creative and engaging event idea for "Striving for Inclusion" based on the topic: "${topic}". The idea should include a catchy title, a brief description, target audience (e.g., parents, children, educators), and suggested activities. Format it clearly.`;
+
+            const generatedText = await callGeminiAPI(prompt);
+
+            eventIdeaOutput.querySelector('p').textContent = generatedText;
+            eventIdeaOutput.classList.remove('hidden');
+            eventLoadingSpinner.classList.add('hidden');
+            generateEventBtn.disabled = false;
+        });
+
+        // --- Resource Summarizer/Expander Logic ---
+        const resourceTextInput = document.getElementById('resource-text-input');
+        const summarizeBtn = document.getElementById('summarize-btn');
+        const expandBtn = document.getElementById('expand-btn');
+        const resourceOutput = document.getElementById('resource-output');
+        const resourceLoadingSpinner = document.getElementById('resource-loading');
+
+        async function processResourceText(action) {
+            const text = resourceTextInput.value.trim();
+            if (!text) {
+                resourceOutput.classList.remove('hidden');
+                resourceOutput.querySelector('p').textContent = "Please enter some text to summarize or expand.";
+                return;
+            }
+
+            resourceLoadingSpinner.classList.remove('hidden');
+            summarizeBtn.disabled = true;
+            expandBtn.disabled = true;
+            resourceOutput.classList.add('hidden'); // Hide previous output
+
+            let prompt;
+            if (action === 'summarize') {
+                prompt = `Summarize the following text concisely, highlighting key points:\n\n"${text}"`;
+            } else if (action === 'expand') {
+                prompt = `Expand on the following text, adding more detail and examples:\n\n"${text}"`;
+            }
+
+            const processedText = await callGeminiAPI(prompt);
+
+            resourceOutput.querySelector('p').textContent = processedText;
+            resourceOutput.classList.remove('hidden');
+            resourceLoadingSpinner.classList.add('hidden');
+            summarizeBtn.disabled = false;
+            expandBtn.disabled = false;
+        }
+
+        summarizeBtn.addEventListener('click', () => processResourceText('summarize'));
+        expandBtn.addEventListener('click', () => processResourceText('expand'));
+
+        // --- Testimonial Generator Logic ---
+        const testimonialPromptInput = document.getElementById('testimonial-prompt');
+        const generateTestimonialBtn = document.getElementById('generate-testimonial-btn');
+        const testimonialText = document.getElementById('testimonial-text');
+        const testimonialAuthor = document.getElementById('testimonial-author');
+        const testimonialLoadingSpinner = document.getElementById('testimonial-loading');
+
+        generateTestimonialBtn.addEventListener('click', async () => {
+            const keywords = testimonialPromptInput.value.trim();
+
+            testimonialLoadingSpinner.classList.remove('hidden');
+            generateTestimonialBtn.disabled = true;
+
+            let prompt = `Generate a short, positive testimonial for "Striving for Inclusion" from a parent's perspective. The testimonial should be about 2-3 sentences.`;
+            if (keywords) {
+                prompt += ` Incorporate these keywords/themes: "${keywords}".`;
+            }
+            prompt += ` Format it as just the quote, followed by "- A Striving for Inclusion Parent".`;
+
+            const generatedTestimonial = await callGeminiAPI(prompt);
+
+            // Split the generated text into quote and author
+            const parts = generatedTestimonial.split('- A Striving for Inclusion Parent');
+            if (parts.length > 1) {
+                testimonialText.textContent = parts[0].trim();
+                testimonialAuthor.textContent = "- A Striving for Inclusion Parent";
+            } else {
+                testimonialText.textContent = generatedTestimonial; // Fallback if format is not as expected
+                testimonialAuthor.textContent = "- A Striving for Inclusion Parent";
+            }
+
+
+            testimonialLoadingSpinner.classList.add('hidden');
+            generateTestimonialBtn.disabled = false;
+        });
+
+    </script>
+</body>
+</html>
